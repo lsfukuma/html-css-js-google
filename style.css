@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 95vw;
+    margin: auto;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-left ul , .header-right ul{
+    list-style: none;
+}
+
+.header-left ul>li , .header-right ul>li{
+    display: inline-block;
+    padding-right: 15px;
+    line-height: 70px;
+    text-decoration: none;
+}
+
+.header-right {
+    float: right;
+}
