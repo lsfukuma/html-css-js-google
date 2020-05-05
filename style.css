@@ -2,14 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
+
+/* .clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+
+} */
+
 .container {
     width: 95vw;
     margin: auto;
 }
 
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
 .header-left {
-    float: left;
+    height: 100px;
+    width: 30%;
+    /* background-color: green; */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.75;
+    font-size: 13px;
 }
 
 .header-left ul , .header-right ul{
@@ -18,11 +43,62 @@
 
 .header-left ul>li , .header-right ul>li{
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 13px;
     line-height: 70px;
     text-decoration: none;
 }
 
 .header-right {
-    float: right;
+    height: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: pink; */
+}
+
+#user {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: darkgreen;
+    line-height: 70px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-nascosto {
+    width: 100px;
+    margin-top: 50px;
+    display: none;
+    overflow: auto;
+    /* visibility: hidden; */
+}
+
+/* Inizio stili google logo , google search, ecc */
+
+.google-logo {
+    margin: auto;
+    text-align: center;
+    padding: 150px 0 20px 0;
+
+}
+
+.google-search {
+    height: 40px;
+    width: 600px;
+    border-radius: 40px;
+    border: 1px solid #dfe1e5;
+    text-align: center;
+}
+
+.google-search input {
+    width: 500px;
+    height: 38px;
+    /* border-color: transparent; */
+    text-align: center;
+}
+
+.google-search i {
+    color: #9AA0A6;
 }
