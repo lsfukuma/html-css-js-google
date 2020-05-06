@@ -54,7 +54,6 @@ a {
     width: 50%;
     display: flex;
     justify-content: flex-end;
-    /* background-color: pink; */
 }
 
 #user {
@@ -73,15 +72,20 @@ a {
 }
 
 .menu-nascosto {
-    width: 100px;
-    margin-top: 50px;
+    width: 160px;
     display: none;
     position: absolute;
-    top: 10px;
+    right: -100px;
     overflow: auto;
-    border: 1px solid black;
+    border: 1px solid #f2f2f2;
     border-radius: 10px;
-    /* visibility: hidden; */
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.30),0 2px 6px 2px rgba(60,64,67,.15)
+}
+
+.menu-nascosto i {
+    font-size: 30px;
+    padding-left: 5px;
+    color: #296CDB;
 }
 
 /* Inizio stili google logo , google search, ecc */
@@ -99,6 +103,11 @@ a {
     border: 1px solid #dfe1e5;
     text-align: center;
     margin: auto;
+}
+
+.google-search:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .google-search input {
@@ -152,40 +161,37 @@ a {
 
 /* Inizio footer */
 
-footer {
-    position: fixed;
-    bottom: 10px;
-}
 .footer-top {
-    /* position: fixed; */
+    position: fixed;
     width: 100vw;
-    /* bottom: 30px; */
-    /* left: 70px; */
+    bottom: 43px;
     color: rgba(0,0,0,.54);
     line-height: 40px;
+    border: 1px solid #e4e4e4;
     background-color: #F2F2F2;
-
 }
 
 .footer-bottom-left {
     position: fixed;
-    bottom: 10px;
-    left: 70px;
+    bottom: 0;
     float: left;
     width: 50vw;
     color: rgba(0,0,0,.54);
     line-height: 40px;
+    border-bottom: 1px solid #e4e4e4;
     background-color: #F2F2F2;
 }
 
 .footer-bottom-right{
     position: fixed;
-    bottom: 10px;
+    bottom: 1px;
     right: 0;
     float: right;
     width: 50vw;
     color: rgba(0,0,0,.54);
+    text-align: right;
     line-height: 40px;
+    border-bottom: 1px solid #e4e4e4;
     background-color: #F2F2F2;
 }
 
