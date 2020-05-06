@@ -20,14 +20,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* position: fixed; */
-
 }
 
 .header-left {
     height: 100px;
     width: 30%;
-    /* background-color: green; */
 }
 
 a {
